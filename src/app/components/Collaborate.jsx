@@ -157,7 +157,7 @@ const Collaborate = () => {
             )}
 
             <iframe
-              src="https://calendly.com/mfahad544/30min?timezone=Europe/Dublin"
+              src="https://calendly.com/mfahad544/30min?timezone=Europe/Dublin&embed_domain=localhost&embed_type=Inline"
               width="100%"
               height="100%"
               className="rounded-lg"
