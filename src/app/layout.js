@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Muhammad Fahad",
   icons: {
-    icon: "/favIcon.png",
+    icon: "/public/favicon.png",
   },
 };
 
