@@ -67,6 +67,7 @@
 // };
 
 // export default Collaborate;
+
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -76,14 +77,17 @@ import SlideUpWrapper from "./SlideUpWrapper";
 const Collaborate = () => {
   const [showModal, setShowModal] = useState(false);
   const [iframeLoaded, setIframeLoaded] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleBookNowClick = () => {
     setShowModal(true);
+    setLoading(true);
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
     setIframeLoaded(false);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -113,9 +117,19 @@ const Collaborate = () => {
 
           <button
             onClick={handleBookNowClick}
-            className="text-white hover:bg-blue-500 cursor-pointer font-mono bg-blue-700 px-8 py-3 rounded-lg font-medium text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+            disabled={loading}
+            className={`text-white mx-auto font-mono bg-blue-700 px-8 py-3 rounded-lg font-medium text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:bg-blue-500 flex items-center justify-center gap-2 ${
+              loading ? "opacity-70 cursor-not-allowed" : "cursor-pointer"
+            }`}
           >
-            Schedule a Call
+            {loading ? (
+              <>
+                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                Loading...
+              </>
+            ) : (
+              "Schedule a Call"
+            )}
           </button>
         </div>
       </SlideUpWrapper>
@@ -149,7 +163,10 @@ const Collaborate = () => {
               className="rounded-lg"
               title="Calendly Inline Embed"
               loading="lazy"
-              onLoad={() => setIframeLoaded(true)}
+              onLoad={() => {
+                setIframeLoaded(true);
+                setLoading(false);
+              }}
             ></iframe>
           </div>
         </div>
