@@ -13,7 +13,6 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Muhammad Fahad",
-  icon: "../../public/favicon.png",
 };
 
 export default function RootLayout({ children }) {
