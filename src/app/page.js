@@ -2,7 +2,7 @@ import AboutSection from "./components/AboutSection";
 import Blog from "./components/Blog";
 import CertificationSection from "./components/CertificationSection";
 import Collaborate from "./components/Collaborate";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 
