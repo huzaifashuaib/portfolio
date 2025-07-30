@@ -19,8 +19,34 @@
   }
 }
 
+@theme {
+  --color-primary: #007aff;
+  --color-secondary: #6b7280;
+  --color-dark: #1f2937;
+  --color-light: #f9fafb;
+  --color-text: #000000;
+  --color-bg: #ffffff;
+
+  --font-sans: "Inter", sans-serif;
+
+  --animation-fade-in: fadeIn 0.5s ease-in-out;
+  --animation-slide-up: slideUp 0.5s ease-in-out;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.marquee-Gradient {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 20%,
+    #000 80%,
+    transparent
+  );
+}
+
+html {
+  scroll-behavior: smooth;
 }
