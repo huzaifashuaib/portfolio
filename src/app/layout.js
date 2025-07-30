@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { MdDeviceHub } from "react-icons/md";
+import icon from "../../public/favicon.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Muhammad Fahad",
+  icon: icon,
 };
 
 export default function RootLayout({ children }) {
