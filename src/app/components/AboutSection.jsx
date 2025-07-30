@@ -135,7 +135,7 @@ const AboutSection = () => {
 
           <div className="relative">
             {/* Main Card */}
-            <div className="bg-white rounded-3xl shadow-2xl p-8 relative z-10 transition-all duration-500 hover:shadow-blue-200 cursor-pointer">
+            <div className="bg-white rounded-3xl shadow-2xl p-8 relative z-10 transition-all duration-500 hover:shadow-blue-400 cursor-pointer">
               {/* Image with Gradient Background */}
               <div className="flex items-center justify-center w-full h-80 relative overflow-hidden">
                 <Image

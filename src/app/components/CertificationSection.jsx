@@ -1,15 +1,6 @@
 "use client";
 
-import {
-  Calendar,
-  Cloud,
-  Code,
-  Database,
-  FileText,
-  Monitor,
-  Server,
-  Shield,
-} from "lucide-react";
+import { Calendar } from "lucide-react";
 import React, { useState } from "react";
 import kuber1 from "../../../public/icons/kuber1.png";
 import kuber2 from "../../../public/icons/kuber2.png";
@@ -17,8 +8,10 @@ import kuber3 from "../../../public/icons/kuber3.png";
 import kuber4 from "../../../public/icons/kuber4.png";
 import kuber5 from "../../../public/icons/kuber5.png";
 import kuber6 from "../../../public/icons/kuber6.png";
-import orcale from "../../../public/icons/oracle.webp";
-import erricson from "../../../public/icons/erricson.png";
+import orcalea from "../../../public/icons/oracle-a.jpg";
+import orcalep from "../../../public/icons/oracle-p.jpg";
+import erricson1 from "../../../public/icons/icon1.png";
+import erricson2 from "../../../public/icons/icon2.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,16 +22,16 @@ const certifications = [
     issuer: "Oracle",
     date: "2014",
     status: "Active",
-    icon: orcale,
+    icon: orcalea,
     path: "https://www.credly.com/badges/6f44c77d-af26-45ea-8125-d15a8b233654/linked_in_profile",
   },
   {
-    name: "Oracle Database 10g Administrator Certified Professional",
-    issuer: "Oracle",
-    date: "2015",
+    name: "Kubernetes and Cloud Native Associate",
+    issuer: "The Linux Foundation",
+    date: "2025",
     status: "Active",
-    icon: orcale,
-    path: "https://www.credly.com/badges/1cfff8f7-7b27-4899-ac4e-12913f228d03/linked_in_profile",
+    icon: kuber2,
+    path: "https://www.credly.com/badges/425c1f21-ab09-48bc-9cf6-8cdb487690b0",
   },
   {
     name: "Certified Kubernetes Administrator",
@@ -53,7 +46,7 @@ const certifications = [
     issuer: "Ericsson",
     date: "2024",
     status: "Active",
-    icon: erricson,
+    icon: erricson1,
     path: "https://www.credly.com/badges/c81382f0-7b3e-47dc-b0d6-fa2698e631f3/linked_in_profile",
   },
   {
@@ -65,13 +58,22 @@ const certifications = [
     path: "https://www.credly.com/badges/223a3eeb-f90a-4997-bf84-a2cc56a46fa3",
   },
   {
-    name: "Kubernetes and Cloud Native Associate",
-    issuer: "The Linux Foundation",
+    name: "Oracle Database 10g Administrator Certified Professional",
+    issuer: "Oracle",
+    date: "2015",
+    status: "Active",
+    icon: orcalep,
+    path: "https://www.credly.com/badges/1cfff8f7-7b27-4899-ac4e-12913f228d03/linked_in_profile",
+  },
+  {
+    name: "Data Analytics & Visualization Experienced Level 2025",
+    issuer: "Ericsson",
     date: "2025",
     status: "Active",
-    icon: kuber2,
-    path: "https://www.credly.com/badges/425c1f21-ab09-48bc-9cf6-8cdb487690b0",
+    icon: erricson2,
+    path: "https://www.credly.com/badges/47bd2e7e-a0a1-4b41-a008-1371031f311a",
   },
+
   {
     name: "Certified Kubernetes Security Specialist",
     issuer: "The Linux Foundation",
@@ -105,21 +107,22 @@ const swipeIcons = [
   kuber4,
   kuber5,
   kuber6,
-  orcale,
-  erricson,
+  orcalea,
+  erricson1,
   kuber4,
   kuber1,
-  orcale,
+  orcalep,
   kuber6,
+  erricson2,
   kuber5,
-  erricson,
+  erricson1,
   kuber3,
   kuber5,
   kuber6,
   kuber5,
   kuber6,
-  orcale,
-  erricson,
+  orcalea,
+  erricson1,
 ];
 const CertificationSection = () => {
   const itemsPerPage = 6;
@@ -131,6 +134,7 @@ const CertificationSection = () => {
     start + itemsPerPage
   );
   const totalPages = Math.ceil(certifications.length / itemsPerPage);
+
   return (
     <SlideUpWrapper className={`py-20 px-3 md:px-6 `} id="certification">
       <section className="pt-3 pb-20 bg-white">
@@ -209,7 +213,7 @@ const CertificationSection = () => {
             <motion.div
               initial={{ x: 0 }}
               animate={{ x: "-100%" }}
-              transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
               className="flex mr-28"
             >
               {swipeIcons.map((icon, index) => (
@@ -230,7 +234,7 @@ const CertificationSection = () => {
             <motion.div
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
-              transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+              transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
               className="flex mr-28"
             >
               {swipeIcons.map((icon, index) => (

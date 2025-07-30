@@ -53,7 +53,7 @@ const Collaborate = () => {
               <RxCross2 size={24} />
             </button>
             <iframe
-              src="https://calendly.com/devhuz10/30min?embed_type=Inline"
+              src="https://calendly.com/mfahad544/30min?timezone=Europe/Dublinembed_type=Inline"
               width="100%"
               height="100%"
               className="rounded-lg "

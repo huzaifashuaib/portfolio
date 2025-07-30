@@ -19,9 +19,12 @@ const HeroSection = () => {
         <div className="absolute top-20 left-20 w-64 h-64 bg-blue-600 rounded-full blur-3xl opacity-30"></div>
         <div className="absolute bottom-20 right-20 w-80 h-80 bg-yellow-300 rounded-full blur-3xl opacity-30"></div>
 
-        <div className=" flex flex-col space-y-5 text-center px-3 md:px-8 max-w-5xl mx-auto relative z-10 ">
+        <div className=" flex flex-col space-y-4 text-center px-3 md:px-8 max-w-5xl mx-auto relative z-10 ">
+          <h3 className="text-3xl font-bold font-mono text-gray-900 leading-tight">
+            Hi👋I'm
+          </h3>
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold font-mono mb-6 text-gray-900 leading-tight">
-            Hi👋I'm Muhammad Fahad
+            Muhammad Fahad
             <span className="block text-blue-600 text-xl md:text-3xl font-sans mt-2">
               Network Operations & OSS Engineer
             </span>

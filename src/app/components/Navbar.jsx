@@ -27,7 +27,7 @@ const Navbar = () => {
         {/* desktop Links */}
         <div className="flex items-center justify-between h-18 px-5">
           <Link
-            href={"/"}
+            href={"/#home"}
             className="text-xl font-bold text-primary bg-amber-300 rounded-md p-1 border-2 border-primary"
           >
             <MdDeviceHub size={25} />

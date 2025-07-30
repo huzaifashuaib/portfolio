@@ -10,7 +10,7 @@ const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 6;
   useEffect(() => {
-    fetch("https://dev.to/api/articles?username=huzaifashoaib")
+    fetch("https://dev.to/api/articles?username=muhammadfahad")
       .then((res) => res.json())
       .then(setArticles)
       .catch(console.error);
@@ -137,7 +137,7 @@ const Blog = () => {
                 key={index}
                 onClick={() => setCurrentPage(index + 1)}
                 aria-label={`Go to page ${index + 1}`}
-                className={`w-9 h-9 flex items-center justify-center rounded-full text-sm font-medium border transition-all duration-300 ${
+                className={`w-9 h-9 flex items-center cursor-pointer justify-center rounded-full text-sm font-medium border transition-all duration-300 ${
                   currentPage === index + 1
                     ? "bg-blue-600 text-white border-blue-600"
                     : "bg-white text-gray-700 border-gray-300 hover:bg-blue-100 hover:text-blue-700"
