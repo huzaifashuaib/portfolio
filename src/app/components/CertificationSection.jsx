@@ -22,7 +22,6 @@ import erricson from "../../../public/icons/erricson.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import useSectionInView from "../hook/useSectionInView";
 import SlideUpWrapper from "./SlideUpWrapper";
 const certifications = [
   {
