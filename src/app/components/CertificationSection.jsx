@@ -34,12 +34,12 @@ const certifications = [
     path: "https://www.credly.com/badges/425c1f21-ab09-48bc-9cf6-8cdb487690b0",
   },
   {
-    name: "Certified Kubernetes Administrator",
+    name: "Kubernetes and Cloud Native Security Associate",
     issuer: "The Linux Foundation",
-    date: "2023",
+    date: "2025",
     status: "Active",
-    icon: kuber1,
-    path: "https://www.credly.com/badges/d8c1af63-029b-4e5c-b0a6-a21bf0ac1779/linked_in_profile",
+    icon: kuber3,
+    path: "https://www.credly.com/badges/cae0c072-1d00-40e9-98d8-7f177f3e2c7e",
   },
   {
     name: "BCSS Cloud Fundamental Level 2024",
@@ -50,14 +50,6 @@ const certifications = [
     path: "https://www.credly.com/badges/c81382f0-7b3e-47dc-b0d6-fa2698e631f3/linked_in_profile",
   },
   {
-    name: "Certified Kubernetes Application Developer",
-    issuer: "The Linux Foundation",
-    date: "2025",
-    status: "Active",
-    icon: kuber5,
-    path: "https://www.credly.com/badges/223a3eeb-f90a-4997-bf84-a2cc56a46fa3",
-  },
-  {
     name: "Oracle Database 10g Administrator Certified Professional",
     issuer: "Oracle",
     date: "2015",
@@ -65,6 +57,15 @@ const certifications = [
     icon: orcalep,
     path: "https://www.credly.com/badges/1cfff8f7-7b27-4899-ac4e-12913f228d03/linked_in_profile",
   },
+  {
+    name: "Certified Kubernetes Application Developer",
+    issuer: "The Linux Foundation",
+    date: "2025",
+    status: "Active",
+    icon: kuber5,
+    path: "https://www.credly.com/badges/223a3eeb-f90a-4997-bf84-a2cc56a46fa3",
+  },
+
   {
     name: "Data Analytics & Visualization Experienced Level 2025",
     issuer: "Ericsson",
@@ -91,12 +92,12 @@ const certifications = [
     path: "https://www.credly.com/badges/78bf801b-a9a5-4153-9b42-f87a64c444f1",
   },
   {
-    name: "Kubernetes and Cloud Native Security Associate",
+    name: "Certified Kubernetes Administrator",
     issuer: "The Linux Foundation",
-    date: "2025",
+    date: "2023",
     status: "Active",
-    icon: kuber3,
-    path: "https://www.credly.com/badges/cae0c072-1d00-40e9-98d8-7f177f3e2c7e",
+    icon: kuber1,
+    path: "https://www.credly.com/badges/d8c1af63-029b-4e5c-b0a6-a21bf0ac1779/linked_in_profile",
   },
 ];
 const reversedCertifications = certifications.slice().reverse();
