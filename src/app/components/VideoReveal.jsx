@@ -7,7 +7,7 @@ const VideoReveal = ({ onVideoEnd }) => {
     wrapperRef?.current?.classList?.add("opacity-0", "pointer-events-none");
     setTimeout(() => {
       onVideoEnd();
-    }, 500);
+    }, 300);
   };
 
   return (
@@ -21,7 +21,10 @@ const VideoReveal = ({ onVideoEnd }) => {
         className="h-full w-full object-cover"
         onEnded={handleVideoEnded}
       >
-        <source src="/OpeningVideo.mp4" type="video/mp4" />
+        <source
+          src="https://dl.dropboxusercontent.com/scl/fi/64fwr41nzrzb97z6t01wb/OpeningVideo.mp4?rlkey=0zxvno5uy8c3n8ruisk6ssgn2&st=6h4bobau"
+          type="video/mp4"
+        />
       </video>
     </div>
   );
