@@ -19,10 +19,11 @@ const VideoReveal = ({ onVideoEnd }) => {
         autoPlay
         muted
         className="h-full w-full object-cover"
+        playsInline
         onEnded={handleVideoEnded}
       >
         <source
-          src="https://dl.dropboxusercontent.com/scl/fi/64fwr41nzrzb97z6t01wb/OpeningVideo.mp4?rlkey=0zxvno5uy8c3n8ruisk6ssgn2&st=6h4bobau"
+          src="https://res.cloudinary.com/dk6huqfvz/video/upload/v1753958482/OpeningVideo_e1idwv.mp4"
           type="video/mp4"
         />
       </video>
